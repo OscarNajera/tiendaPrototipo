@@ -1,0 +1,27 @@
+	{% block navegacion %}
+				<nav>
+					<a href="/">inicio</a>
+					<a href="/NuevosEventos">nuevos eventos </a>
+					<a href="">quienes somos</a>
+					<a href="">foro</a>
+				</nav>		
+				<div class="login">
+					<div class="">
+						<i class="fas fa-user"></i><br>
+						<button id="MostrarOcultar">login</button>
+					</div>
+					<form action="" class="oculto" id="oculto"	>
+						<div>
+							<div>
+								<label for="">usuario</label>
+								<input type="text">						
+							</div>
+							<div>
+								<label for="">usuario</label>
+								<input type="text">						
+							</div>
+						</div>
+						<a href="/registro">Registrarce</a>
+					</form>
+				</div>
+    {% endblock %}     

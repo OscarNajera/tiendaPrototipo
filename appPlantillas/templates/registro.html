@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet"  type="text/css" href=" {% static 'css/normalize.css'  %}">
+	<link rel="stylesheet" href="{% static 'css/all.min.css'  %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/app.css'  %}">
+	
+ 
+</head>
+<body>
+ <h1>Registro</h1>
+	<div class="cont-form">
+		<form action="" class="form">
+			<div>
+				<label for="" class="sm-oculto">nombre</label>
+				<input type="text" name="nombre" id="nombre" >
+			</div>
+			<div>
+				<label for="" class="sm-oculto">apellido </label>
+				<input type="text" name="apellido" id="apellido" >
+			</div>
+			<div>
+				<label for="" class="sm-oculto">apodo </label>
+				<input type="text" name="apodo" id="apodo" >
+			</div>
+			<div>
+				<label for="" class="sm-oculto">correo </label>
+				<input type="text" name="correo" id="correo" >
+			</div>
+			<div>
+				<label for="" class="sm-oculto">contrasena </label>
+				<input type="password" name="contrasena" id="contrasena" >
+			</div>
+			<div>
+				<label for="" class="sm-oculto">rfc </label>
+				<input type="text" name="rfc" id="rfc" >
+			</div>
+			<div>
+				<label for="" class="sm-oculto">publico </label>
+				<input type="radio" name="publico" id="publico" >
+				<label for="" class="sm-oculto">privado </label>	
+				<input type="radio" name="publico" id="publico" >
+			</div>
+			<div>
+				<input type="submit" value="Registar" class="enviar">
+			</div>
+ 
+
+		</form>
+	</div>
+</body>
+</html>
+ 

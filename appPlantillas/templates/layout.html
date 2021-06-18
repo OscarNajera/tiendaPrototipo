@@ -1,0 +1,118 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet"  type="text/css" href=" {% static 'css/normalize.css'  %}">
+	<link rel="stylesheet" href="{% static 'css/all.min.css'  %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/app.css'  %}">
+	
+	<style type="text/css">
+		.body{
+			justify-content: space-between;
+			align-items: center;
+
+		}	
+	</style>
+</head>
+<body>
+		
+	 	{% block navegacion %}
+			<header class=" menu">
+			{% include  'nav.html '  %}
+			</header>
+		{% endblock %}	
+		
+	{% block hero %}
+
+	{% endblock %}
+	
+	{% block meces %}	
+		<div class="limite mes">
+			<h2>Meces</h2>
+			<div class="meses">
+				<a href="">enoero</a>
+				<a href="">febrero</a>
+				<a href="">Marzo</a>
+				<a href="">Abril</a>
+				<a href="">Mayo</a>
+				<a href="">Junio</a>
+				<a href="">Julio</a>
+				<a href="">Agosto</a>
+				<a href="">Septiembre</a>
+				<a href="">Octubre</a>
+				<a href="">Noviembre</a>
+				<a href="">Diciembre</a>
+			</div>
+		</div>
+	{% endblock %}
+
+	<section class="limite contenido-eve">
+		<h1>Este Mes</h1>
+		<div  class=" eventos">
+			<div class="evento-x">
+				<h3>X evento</h3>
+				<div>
+					<img src="{% static 'img/carnaval.jpg'  %}">
+					
+				</div>
+				<p>fecha </p>
+				<p>contenido </p>
+			</div>
+			<div class="evento-x">
+				<h3>X evento</h3>
+				<div>
+					<img src="{% static 'img/carnaval2.jpg'  %}">
+					
+				</div>
+				<p>fecha </p>
+				<p>contenido </p>
+			</div>
+			<div class="evento-x">
+				<h3>X evento</h3>
+				<div>
+					<img src="{% static 'img/carnaval.jpg'  %}">
+					
+				</div>
+				<p>fecha </p>
+				<p>contenido </p>
+			</div>
+			<div class="evento-x">
+				<h3>X evento</h3>
+				<div>
+					<img src="{% static 'img/carnaval2.jpg'  %}">
+					
+				</div>
+				<p>fecha </p>
+				<p>contenido </p>
+			</div>
+			<div class="evento-x">
+				<h3>X evento</h3>
+				<div>
+					<img src="{% static 'img/carnaval.jpg'  %}">
+					
+				</div>
+				<p>fecha </p>
+				<p>contenido </p>
+			</div>
+			<div class="evento-x">
+				<h3>X evento</h3>
+				<div>
+					<img src="{% static 'img/carnaval2.jpg'  %}">
+					
+				</div>
+				<p>fecha </p>
+				<p>contenido </p>
+			</div>
+			
+		</div>
+	</section>
+
+	<script src="{% static 'scripts/script.js'  %}"></script>
+</body>
+</html>
+				 

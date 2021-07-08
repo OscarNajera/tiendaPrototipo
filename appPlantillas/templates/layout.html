@@ -15,8 +15,20 @@
 		.body{
 			justify-content: space-between;
 			align-items: center;
-
+			background-color: black;
 		}	
+		.contenido-xevento{
+			font-weight: bold;
+			color: rgb(100, 237, 141);		}
+		.informacionx{
+			background-color: rgb(104, 155, 189);
+			height: auto;
+		}
+		.form{
+			color: aliceblue;
+		}
+			
+
 	</style>
 </head>
 <body>
@@ -53,8 +65,15 @@
 
 	<section class="limite contenido-eve">
 		<h1>Este Mes</h1>
+	 
+
+
 		<div  class=" eventos">
-			<div class="evento-x">
+
+			{% block eventox  %}
+			   
+			{% endblock%}
+			<!--<div class="evento-x">
 				<h3>X evento</h3>
 				<div>
 					<img src="{% static 'img/carnaval.jpg'  %}">
@@ -63,52 +82,7 @@
 				<p>fecha </p>
 				<p>contenido </p>
 			</div>
-			<div class="evento-x">
-				<h3>X evento</h3>
-				<div>
-					<img src="{% static 'img/carnaval2.jpg'  %}">
-					
-				</div>
-				<p>fecha </p>
-				<p>contenido </p>
-			</div>
-			<div class="evento-x">
-				<h3>X evento</h3>
-				<div>
-					<img src="{% static 'img/carnaval.jpg'  %}">
-					
-				</div>
-				<p>fecha </p>
-				<p>contenido </p>
-			</div>
-			<div class="evento-x">
-				<h3>X evento</h3>
-				<div>
-					<img src="{% static 'img/carnaval2.jpg'  %}">
-					
-				</div>
-				<p>fecha </p>
-				<p>contenido </p>
-			</div>
-			<div class="evento-x">
-				<h3>X evento</h3>
-				<div>
-					<img src="{% static 'img/carnaval.jpg'  %}">
-					
-				</div>
-				<p>fecha </p>
-				<p>contenido </p>
-			</div>
-			<div class="evento-x">
-				<h3>X evento</h3>
-				<div>
-					<img src="{% static 'img/carnaval2.jpg'  %}">
-					
-				</div>
-				<p>fecha </p>
-				<p>contenido </p>
-			</div>
-			
+		-->
 		</div>
 	</section>
 

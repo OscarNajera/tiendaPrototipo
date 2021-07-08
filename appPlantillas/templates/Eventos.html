@@ -1,0 +1,22 @@
+ 
+  
+    {% for evento in eventos%}
+      <div  class="evento-x">
+          <h3>{{evento.nombreEvento}}</h3>
+          <div>
+                {% if evento.imagen != "null" and evento.imagen.url|length >= 1   %}
+                  <a href="descripcion/{{evento.nombreEvento}}"><img src="{{ evento.imagen.url }}"></a>  
+                {% endif  %}
+
+          </div>
+          <div class="informacionx">
+            <p>Inicia {{evento.fechaI}}  </p>
+            <p>Finaliza  {{evento.fechaF}}</p>
+            <p class="contenido-xevento">{{evento.informacion}} </p>             
+          </div>
+
+      </div> 
+    {% endfor  %}
+  
+
+

@@ -1,0 +1,68 @@
+{% extends  'layout.html'  %}  
+ 
+    
+    {% block hero %}
+        <form action="/GuardarEvento/" class="form" method="POST" enctype="multipart/form-data" color="white">
+			{% csrf_token    %}
+            <div>
+				<label for="" class="sm-oculto">nombre</label>
+				<input type="text" name="nombre" id="nombre" >
+			</div>
+
+			<div>
+				<label for="" class="sm-oculto">Fecha Inicio </label>
+				<input type="date" name="fechaI" id="fechaI" >
+			</div>
+
+			<div>
+				<label for="" class="sm-oculto">Fecha Fin </label>
+				<input type="date" name="fechaF" id="fechaF" >
+			</div>
+
+
+
+			<div>
+				<label for="" class="sm-oculto">Informacion</label>
+				<textarea type="text" name="informacion" id="informacion" >
+				</textarea>	
+			</div>
+
+			<div>
+				<label for="" class="sm-oculto">Costo</label>
+				<input type="text" name="costo" id="costo" >
+			</div>
+
+			<div>
+				<label for="" class="sm-oculto">Horario Inicio</label>
+				<input type="time" name="horaInicio" id="horarioi" >
+				<label for="" class="sm-oculto">Horario Fin</label>
+				<input type="time" name="horafinal" id="horariof" >
+				
+			</div>
+            <div>
+				<label for="" class="sm-oculto">Lugar</label>
+				<input type="text" name="lugar" id="lugar" >
+			</div>
+            <div>
+				<label for="" class="sm-oculto">Contacto</label>
+				<input type="text" name="contacto" id="contacto" >
+			</div>
+            <div>
+				<label for="" class="sm-oculto">Redes sociale</label>
+				<input type="text" name="redeSociales" id="redeSociales" >
+			</div>
+
+			<div>
+				<label for="" class="sm-oculto">Imagen</label>
+				<input type="file" name="imagen" id="imagen" >
+			</div>
+            
+			<div>
+				<input type="submit" value="Registar" class="enviar">
+			</div>
+ 
+
+ 
+
+        </form>
+	{% endblock %}

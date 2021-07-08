@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from appPlantillas.views import saludo,index,NuevosEventos,registro,CrearUsuario
+from appPlantillas.views import saludo,index,NuevosEventos,registro,CrearUsuario,GuardarUsuario,CrearEvento,GuardarEvento,MostrarEventos,descripcion
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +27,13 @@ urlpatterns = [
     path('NuevosEventos/', NuevosEventos, name="NuevosEventos"),
     path('registro/', registro, name="registro"),
     path('CrearUsuario/', CrearUsuario, name="CrearUsuario"),
+    path('GuardarUsuario/', GuardarUsuario, name="GuardarUsuario"),
+    path('CrearEvento/', CrearEvento, name="CrearEvento"),
+    path('GuardarEvento/', GuardarEvento, name="GuardarE"),
+    path('MostrarEventos/', MostrarEventos, name="MostrarEve"),
+    path('descripcion/<str:xeve>', descripcion, name="descripcion"),
     
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

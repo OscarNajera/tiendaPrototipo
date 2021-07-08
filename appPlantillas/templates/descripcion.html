@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link rel="stylesheet"  type="text/css" href=" {% static 'css/normalize.css'  %}">
+	<link rel="stylesheet" href="{% static 'css/all.min.css'  %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/app.css'  %}">
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+        }
+        .contenido{
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .cont-img{
+            height: 400px;
+        }
+        .cont-img img{
+            height: 100%;
+
+        }
+        .info{
+            font-family: 'Courier New', Courier, monospace;
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class=" menu">
+        {% include  'nav.html '  %}
+        </header>
+	<div class="contenido">
+        <h1>{{x.nombreEvento}}</h1>
+        <div class="cont-img">
+            <img src="{{x.imagen.url}}" alt="">
+        </div>
+        <p>del {{x.fechaI}} al  {{x.fechaF}}  </p>
+        <div class="info">
+            <p>Inicia: <strong>{{x.horaInicio}} am</strong></p>
+            <p>Finaliza: <strong>{{x.horafinal}} pm</strong></p>
+            <p>Lugar: {{x.lugar}} </p>
+        </div>
+        
+        <div class="info">
+            {{x.informacion}}
+        </div>
+
+    </div>
+</body>
+</html>

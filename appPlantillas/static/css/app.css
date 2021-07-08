@@ -11,6 +11,7 @@ html {
 
 body {
   font-size: 16px;
+  background-color: black;
 }
 
 a {
@@ -135,11 +136,10 @@ img {
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   margin: .5rem 0;
+  padding: 5px;
 }
 
-.contenido-eve .eventos .evento-x div {
-  height: 250px;
-}
+ 
 
 .cont-form{
   width: 500px;
@@ -175,4 +175,8 @@ img {
   flex-basis: 100%;
 }
 
-
+.contenido-xevento{
+  height: 50px;
+  overflow: auto;
+}
+ 
